@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Timer</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Michroma font -->
+    <style>
+           @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Frame for timer and buttons -->
+        <div class="frame">
+            <div class="timer-frame">
+                <!-- Timer Text with Space Mono font -->
+                <div class="timer typeface mono">00:00:00</div>
+            </div>
+
+            <!-- Buttons for Start/End Timer -->
+            <div class="buttons">
+                <button id="start" class="start-button">Start</button>
+                <button id="stop" class="stop-button" disabled>End</button>
+            </div>
+
+            <!-- Horizontal line separator -->
+            <hr>
+
+            <!-- Estimated earnings section -->
+            <div class="earnings">
+                <div>
+                    Estimated Earnings: $<span id="earnings">0.00</span>
+                </div>
+            </div>
+
+            <!-- Horizontal line separator -->
+            <hr>
+
+            <!-- Button to change hourly rate -->
+            <button id="changeRateButton">Change Hourly Rate</button>
+
+            <!-- Current Hourly Rate Display -->
+            <div id="currentHourlyRate" class="earnings">Current Hourly Rate: $<span id="rateDisplay">10</span></div>
+
+            <!-- Input box to change hourly rate (initially hidden) -->
+            <div id="rateLayer" class="hidden">
+                <div class="rate-container">
+                    <label for="hourlyRateInput">Enter your hourly rate:</label><br>
+                    <input type="number" id="hourlyRateInput" placeholder="Hourly rate" min="1" step="0.01">
+                    <br>
+                    <button id="saveRateButton">Save Rate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

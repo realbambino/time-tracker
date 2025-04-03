@@ -1,0 +1,152 @@
+/* General styling */
+body {
+    font-family: "Kode Mono", monospace;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Frame around both the timer and buttons */
+.frame {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #666; /* Adds a border around the whole frame */
+    width: 400px;  /* Set width of the frame to 400px */
+}
+
+/* Timer specific styles */
+.timer-frame {
+    margin-bottom: 20px;
+}
+
+.timer.typeface.mono {
+    font-size: 3em;
+    font-weight: 400;
+    font-family: "Kode Mono", monospace;
+    text-align: center;
+}
+
+/* Button section styles */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Horizontal padding of 30px, vertical padding of 15px */
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100px; /* Set width of both buttons to 100px */
+    font-family: "Kode Mono", monospace;
+}
+
+button.disabled {
+    background-color: #777;
+    cursor: not-allowed; /* Change cursor to not-allowed when disabled */
+}
+
+button:disabled {
+    color: #ccc;
+}
+
+button#start {
+    background-color: #007bff; /* Blue */
+}
+
+button#stop {
+    background-color: #ff4c4c; /* Red */
+}
+
+/* Horizontal line styles */
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #666;
+}
+
+/* Earnings section styles */
+.earnings {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Hidden input container */
+.hidden {
+    display: none;
+}
+
+#rateLayer {
+    margin-top: 20px;
+    background-color: #333; /* Dark background for the input layer */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #666;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.rate-container {
+    text-align: center;
+}
+
+#hourlyRateInput {
+    width: 120px;
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+#saveRateButton {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px; /* Set the width of the button to 200px */
+}
+
+/* Style for the "Change Hourly Rate" button */
+#changeRateButton {
+    background-color: #FFD700; /* Golden Yellow */
+    color: black; /* Text color to white */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for a better look */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Change the cursor to a pointer when hovered */
+    border-radius: 5px; /* Rounded corners */
+    width: 300px; /* Set the width of the button to 300px */
+    margin: 20px auto; /* Center the button horizontally */
+    display: block; /* Make the button a block-level element */
+    text-align: center; /* Ensure the text is centered */
+}
+
+#changeRateButton:hover {
+    background-color: #FFC300; /* Slightly lighter yellow when hovered */
+}
+
+/* Styling for the current hourly rate text */
+#currentHourlyRate {
+    font-size: 14px; /* Adjust the size as per your preference */
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
